@@ -2,7 +2,8 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                    <!-- <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="module-heading">
                             <h4 class="module-title">Contact Us</h4>
                         </div>
@@ -27,8 +28,9 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    </div> -->
+                    <?php dynamic_sidebar('footer_widget_first'); ?>
+                    <!-- <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="module-heading">
                             <h4 class="module-title">Customer Service</h4>
                         </div>
@@ -41,8 +43,9 @@
                                 <li class="last"><a href="#" title="Where is my order?">Help Center</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    </div> -->
+                    <?php dynamic_sidebar('footer_widget_one'); ?>
+                    <!-- <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="module-heading">
                             <h4 class="module-title">Corporation</h4>
                         </div>
@@ -55,8 +58,9 @@
                                 <li class="last"><a title="Orders History" href="#">Advanced Search</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    </div> -->
+                    <?php dynamic_sidebar('footer_widget_two'); ?>
+                    <!-- <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="module-heading">
                             <h4 class="module-title">Why Choose Us</h4>
                         </div>
@@ -69,7 +73,8 @@
                                 <li class=" last"><a href="contact-us.html" title="Suppliers">Contact Us</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
+                    <?php dynamic_sidebar('footer_widget_three'); ?>
                 </div>
             </div>
         </div>
@@ -115,19 +120,7 @@
             </div>
         </div>
     </footer>
-    <!-- JavaScripts placed at the end of the document-->
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/jquery-1.11.1.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/bootstrap.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/bootstrap-hover-dropdown.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/owl.carousel.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/echo.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/jquery.easing-1.3.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/bootstrap-slider.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/jquery.rateit.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/lightbox.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/bootstrap-select.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/wow.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(  ); ?>/assets/js/scripts.js"></script>
+    <!-- JavaScripts placed at the end of the document-->    
 
     <?php wp_footer(); ?>
     </body>

@@ -9,29 +9,19 @@
     <meta name="keywords" content="MediaCenter, Template, eCommerce">
     <meta name="robots" content="all">-->
     <title><?php bloginfo( 'title' ); ?> - <?php bloginfo( 'description' ); ?></title>
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/main.css">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/blue.css">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/owl.transitions.css">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/rateit.css">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/bootstrap-select.min.css">
+    <!-- Bootstrap Core CSS -->    
 
     <!-- Icons/Glyphs -->
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri());?>/assets/css/font-awesome.css">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+  
     <?php wp_head(); ?>
 </head>
 
-<body class="cnt-home">
+<body <?php body_class();?> >
   <header class="header-style-1">
       <div class="top-bar animate-dropdown">
           <div class="container">
@@ -72,7 +62,7 @@
                                       <div class="row">
                                           <div class="col-xs-4">
                                               <div class="image">
-                                                  <a href="detail.html"><img src="assets/images/cart.jpg" alt=""></a>
+                                                  <a href="detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cart.jpg" alt=""></a>
                                               </div>
                                           </div>
                                           <div class="col-xs-7">
@@ -104,121 +94,22 @@
                       <div class="nav-bg-class">
                           <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
                               <div class="nav-outer">
-                                  <ul class="nav navbar-nav">
-                                      <li class="active dropdown yamm-fw"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Home</a> </li>
-                                      <li class="dropdown mega-menu">
-                                          <a href="category.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Electronics <span class="menu-label hot-menu hidden-xs">hot</span> </a>
-                                          <ul class="dropdown-menu container">
-                                              <li>
-                                                  <div class="yamm-content">
-                                                      <div class="row">
-                                                          <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                                                              <h2 class="title">Laptops</h2>
-                                                              <ul class="links">
-                                                                  <li><a href="#">Gaming</a></li>
-                                                                  <li><a href="#">Laptop Skins</a></li>
-                                                                  <li><a href="#">Apple</a></li>
-                                                                  <li><a href="#">Dell</a></li>
-                                                                  <li><a href="#">Lenovo</a></li>
-                                                                  <li><a href="#">Microsoft</a></li>
-                                                                  <li><a href="#">Asus</a></li>
-                                                                  <li><a href="#">Adapters</a></li>
-                                                                  <li><a href="#">Batteries</a></li>
-                                                                  <li><a href="#">Cooling Pads</a></li>
-                                                              </ul>
-                                                          </div>
-                                                          <!-- /.col -->
-
-                                                          <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                                                              <h2 class="title">Desktops</h2>
-                                                              <ul class="links">
-                                                                  <li><a href="#">Routers & Modems</a></li>
-                                                                  <li><a href="#">CPUs, Processors</a></li>
-                                                                  <li><a href="#">PC Gaming Store</a></li>
-                                                                  <li><a href="#">Graphics Cards</a></li>
-                                                                  <li><a href="#">Components</a></li>
-                                                                  <li><a href="#">Webcam</a></li>
-                                                                  <li><a href="#">Memory (RAM)</a></li>
-                                                                  <li><a href="#">Motherboards</a></li>
-                                                                  <li><a href="#">Keyboards</a></li>
-                                                                  <li><a href="#">Headphones</a></li>
-                                                              </ul>
-                                                          </div>
-                                                          <!-- /.col -->
-
-                                                          <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                                                              <h2 class="title">Cameras</h2>
-                                                              <ul class="links">
-                                                                  <li><a href="#">Accessories</a></li>
-                                                                  <li><a href="#">Binoculars</a></li>
-                                                                  <li><a href="#">Telescopes</a></li>
-                                                                  <li><a href="#">Camcorders</a></li>
-                                                                  <li><a href="#">Digital</a></li>
-                                                                  <li><a href="#">Film Cameras</a></li>
-                                                                  <li><a href="#">Flashes</a></li>
-                                                                  <li><a href="#">Lenses</a></li>
-                                                                  <li><a href="#">Surveillance</a></li>
-                                                                  <li><a href="#">Tripods</a></li>
-                                                              </ul>
-                                                          </div>
-                                                          <!-- /.col -->
-                                                          <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                                                              <h2 class="title">Mobile Phones</h2>
-                                                              <ul class="links">
-                                                                  <li><a href="#">Apple</a></li>
-                                                                  <li><a href="#">Samsung</a></li>
-                                                                  <li><a href="#">Lenovo</a></li>
-                                                                  <li><a href="#">Motorola</a></li>
-                                                                  <li><a href="#">LeEco</a></li>
-                                                                  <li><a href="#">Asus</a></li>
-                                                                  <li><a href="#">Acer</a></li>
-                                                                  <li><a href="#">Accessories</a></li>
-                                                                  <li><a href="#">Headphones</a></li>
-                                                                  <li><a href="#">Memory Cards</a></li>
-                                                              </ul>
-                                                          </div>
-                                                          <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner">
-                                                              <a href="#"><img alt="" src="assets/images/banners/banner-side.png"></a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                          </ul>
-                                          </li>
-                                          <li class="dropdown hidden-sm"> <a href="category.html">Health & Beauty <span class="menu-label new-menu hidden-xs">new</span> </a> </li>
-                                          <li class="dropdown hidden-sm"> <a href="category.html">Watches</a> </li>
-                                          <li class="dropdown"> <a href="contact.html">Jewellery</a> </li>
-                                          <li class="dropdown"> <a href="contact.html">Shoes</a> </li>
-                                          <li class="dropdown"> <a href="contact.html">Kids & Girls</a> </li>
-                                          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Pages</a>
-                                              <ul class="dropdown-menu pages">
-                                                  <li>
-                                                      <div class="yamm-content">
-                                                          <div class="row">
-                                                              <div class="col-xs-12 col-menu">
-                                                                  <ul class="links">
-                                                                      <li><a href="home.html">Home</a></li>
-                                                                      <li><a href="category.html">Category</a></li>
-                                                                      <li><a href="detail.html">Detail</a></li>
-                                                                      <li><a href="shopping-cart.html">Shopping Cart Summary</a></li>
-                                                                      <li><a href="checkout.html">Checkout</a></li>
-                                                                      <li><a href="blog.html">Blog</a></li>
-                                                                      <li><a href="blog-details.html">Blog Detail</a></li>
-                                                                      <li><a href="contact.html">Contact</a></li>
-                                                                      <li><a href="sign-in.html">Sign In</a></li>
-                                                                      <li><a href="my-wishlist.html">Wishlist</a></li>
-                                                                      <li><a href="terms-conditions.html">Terms and Condition</a></li>
-                                                                      <li><a href="track-orders.html">Track Orders</a></li>
-                                                                      <li><a href="product-comparison.html">Product-Comparison</a></li>
-                                                                      <li><a href="faq.html">FAQ</a></li>
-                                                                      <li><a href="404.html">404</a></li>
-                                                                  </ul>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </li>
-                                              </ul>
-                                          </li>
-                                  </ul>
+                                  <?php
+                                      wp_nav_menu([
+                                        'container' => 'ul',
+                                        'theme_location' => 'main_menu',
+                                        'container_class' => 'nav-outer',
+                                        'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>',
+                                        'menu_class' => 'nav navbar-nav'
+                                      ])                                    
+                                  ?>
+                                  <!-- <ul class="nav navbar-nav">                                                                        
+                                      <li class="dropdown"> <a href="contact.html">About Us</a> </li>
+                                      <li class="dropdown"> <a href="contact.html">Our Products</a> </li>
+                                      <li class="dropdown"> <a href="contact.html">Cart</a> </li>                                          
+                                      <li class="dropdown"> <a href="contact.html">Category</a> </li>                                          
+                                      <li class="dropdown"> <a href="contact.html">Blog</a> </li> 
+                                  </ul> --> 
                               </div>
                           </div>
                       </div>
